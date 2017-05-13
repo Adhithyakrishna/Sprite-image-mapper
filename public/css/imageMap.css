@@ -119,7 +119,7 @@ input.cls_getImage {
 .renderStep .bg_container {
     float: left
 }
-.img.bg_image {
+.bg_image {
     width: 100%;
     height: auto;
 }
