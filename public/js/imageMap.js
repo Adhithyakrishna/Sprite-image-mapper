@@ -118,7 +118,14 @@
 
 		$(".zoomOut").click(function(event) {
 			var zoomVal = $('.bg_preview').css('zoom');
-			$('.bg_preview').css('zoom', (parseInt(zoomVal) - 1));
+			var minus;
+			if(zoomVal > 1) {
+				minus = zoomVal - 1;
+			}
+			else {
+				minus = zoomVal - 0.5;
+			}
+			$('.bg_preview').css('zoom', minus);
 		});
 
 		$(".basic").spectrum({
@@ -212,6 +219,10 @@
 	$(".copyCss").click(function() {
 		$(".myRenderedCss").select();
 		document.execCommand('copy');
+	});
+
+	$(".closePropertyTab").unbind('click').bind('click', function() {
+		$(".absolutePreview.noOverFlow ").hide();
 	});
 
 	File.prototype.convertToBase64 = function(callback) {

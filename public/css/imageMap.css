@@ -1,4 +1,4 @@
-input, button {
+input, button,.closeIt {
     cursor: pointer;
 }
 .contentHolder,
@@ -18,6 +18,12 @@ input, button {
     height: auto;
     background-repeat: no-repeat;
     background-size: contain
+}
+.closePropertyTab {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    padding: 2px;
 }
 .header {
     font-family: 'Crete Round', serif;
@@ -113,18 +119,26 @@ input.cls_getImage {
 .renderStep .bg_container {
     float: left
 }
+.img.bg_image {
+    width: 100%;
+    height: auto;
+}
+.bg_container {
+    max-width: 60%;
+}
 .renderStep .bg_preview {
     margin: auto;
     border: .25px solid #000
 }
 .renderStep.bg_wrapper {
+    overflow-y: hidden;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     margin: 0 5% 0 5%;
     height: 100%;
-    min-height: 800px;
+    min-height: 1000px;
 }
 .renderStep .bg_selector {
     position: absolute;
@@ -149,8 +163,9 @@ input.cls_getImage {
 }
 .renderStep .absolutePreview {
     position: absolute;
+    width: 27%;
     z-index: 1;
-    right: 20%;
+    right: 5%;
     overflow: scroll;
     padding: 20px;
     cursor: all-scroll;
@@ -165,7 +180,7 @@ input.cls_getImage {
     cursor: pointer
 }
 .renderStep .primary {
-    margin: 19px;
+    margin: 18px;
     border: 1px solid
 }
 .zoomPreview {
@@ -187,7 +202,7 @@ input.cls_getImage {
     width: 40%;
 }
 .renderStep .secondary {
-    margin: 19px
+    margin: 18px;
 }
 .renderStep .colorSwatchSelector,
 .renderStep .swatches {
@@ -236,10 +251,11 @@ input.cls_getImage {
     border: 2px solid
 }
 .renderStep .noOverFlow {
-    top: 20%;
+    bottom: 20%;
     right: initial;
-    left: 20%;
-    overflow: hidden
+    left: 0;
+    overflow: hidden;
+    width: auto;
 }
 .reSelectImg {
     cursor: pointer;
