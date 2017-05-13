@@ -1,0 +1,90 @@
+<div class="gotoSite">
+     <div class="mapperContainer">
+        <div class="arrow rotate"></div>
+        <div class="gotToMapper">Need help?</div>
+     </div>
+</div>
+<div class="previewStep">
+   <div class="imageUpdater">
+      <div class="addImageUrl">
+         <h1> Enter Image Link</h1>
+         <div class="cls_imageCon">Image Link : 
+            <input class="cls_getImage" type="text" />
+            <input class="cls_imageGetBtn" type="button" value="OK"/>
+         </div>
+      </div>
+      <h2>( or )</h2>
+      <div class="uploadFile">
+         <h1> Upload a image</h1>
+         <div class="file_upload">
+            <input type="file" id="updloadFile" multiple="false">
+         </div>
+      </div>
+   </div>
+   <div class="previewContainer">
+      <div class="buttonHolder">
+         <h1>Are we good ?</h1>
+         <input class="mapImage" type="button" value="Proceed to image Mapper"/>
+      </div>
+      <h1 class="previewImage">Image Preview</h1>
+      <img class="renderPreview" onerror="handleError();"></img>
+   </div>
+</div>
+<div class="bg_wrapper renderStep">
+   <div class="bg_container">
+      <img class="bg_image" src="">
+      <div class="bg_selector"></div>
+   </div>
+   <div class="absolutePreview">
+      <div class="bg_previewCon head">
+         <div class="header">
+            <h2>Preview</h2>
+         </div>
+         <div class="overflowContainer">
+            <div class="bg_preview"></div>
+         </div>
+         <div class="zoomPreview">
+            <button class="zoomer zoomin">+</button>
+            <button class=" zoomer zoomOut">-</button>
+         </div>
+      </div>
+      <div class="bg_inCon head">
+         <h2>Required Width</h2>
+         <div class="dimensionPropHolder">
+            <div class="textContainer">
+               <input class="bg_reqW widthHolder" type="text" placeholder="Required Width Eg:20"> 
+               {{!-- OR <input class="bg_reqH heightHolder" type="text" placeholder="Required Height Eg:20"> --}}
+            </div>
+            <input class="submitholder" type="submit" onclick="validator();" value="Set Dimension" class="bg_submitBtn">
+         </div>
+      </div>
+      <div class="getCss">
+         <h2>Image Position Css property</h2>
+         <textarea name="Text1" class="myRenderedCss" cols="30" rows="5"></textarea>
+         <button class="copyCss">copy</button>
+      </div>
+   </div>
+   <div class="absolutePreview noOverFlow">
+      <button class="reSelectImg">Re-select Image</button>
+      <div class="head bgColorSwatchSelector">
+         <h2>Sprite Background Color</h2>
+         <div class="swatches">
+            <div class="primary" style="background: red;"></div>
+            <div class="primary" style="background: blue;"></div>
+            <div class="primary" style="background: black;"></div>
+            <input class="primary basic" type='text' value='yellow' />
+         </div>
+      </div>
+      <div class="selectorColorSwatchSelector">
+         <div class="bgColorSwatchSelector">
+            <h2>Selector Border Color</h2>
+            <div class="swatches">
+               <div class="secondary" style="border-color: red;"></div>
+               <div class="secondary" style="border-color: blue;"></div>
+               <div class="secondary" style="border-color: black;"></div>
+               <input class="secondary basic" type='text' value='yellow' />
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

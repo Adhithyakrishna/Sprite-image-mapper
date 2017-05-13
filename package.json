@@ -1,0 +1,16 @@
+{
+  "name": "spritemapper",
+  "version": "1.0.0",
+  "description": "Seamlessly map images in sprite",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "express-handlebars": "*"
+	},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adhithyakrishna.k.s",
+  "license": "ISC"
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sprite-Image mapper</title>
+      <link rel="icon" href="static/img/favicon.ico" type="image/x-icon" />
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+      <link rel="stylesheet" type="text/css" href="/static/css/helper.css">
+      <link href="https://fonts.googleapis.com/css?family=Amaranth|Crete+Round" rel="stylesheet">
+      <script type="text/javascript">
+         $(document).ready(function($) {
+         	$(".mapperContainer").unbind('click').bind('click', function() {
+         		window.location = window.location.origin;
+         	});	
+         });
+      </script>
+   </head>
+   <body>
+      <div class="header">Sprite-Image Mapper</div>
+      <div class="gotoSite">
+         <div class="mapperContainer">
+            <div class="gotToMapper">Start mapping</div>
+            <div class="arrow"></div>
+         </div>
+      </div>
+      <div class="helper helperDom1">
+         <div class="imgHolder">
+            <img class="help" src="/static/img/snipe1.png">
+         </div>
+         <div class="helperDoc">
+            <ul>
+               <li>Sprite image can be loaded either from URL or can be uploaded.</li>
+               <li>Uploaded image cannot exceed 1mb.</li>
+               <li>The supported File formats are 'jpeg', 'jpg', 'png' and 'bmp' </li>
+            </ul>
+         </div>
+      </div>
+      <div class="helper helperDom2">
+         <div class="imgHolder">
+            <img class="help" src="/static/img/snipe2.png">
+         </div>
+         <div class="helperDoc">
+            <ul>
+               <li>The image preview container shows the image provided.</li>
+               <li>You can go ahead and change the image by selecting a new image should you wish to.</li>
+               <li>Once the image is rendered on screen, click on "proceed to image mapper" button.</li>
+            </ul>
+         </div>
+      </div>
+      <div class="helper helperDom3">
+         <div class="imgHolder">
+            <img class="help" src="/static/img/snipe3.png">
+         </div>
+         <div class="helperDoc">
+            <ul>
+               <li>The red boundary around the image is the selector.</li>
+               <li>Selector can be re-sized or moved around to choose the necessary part of the sprite image.</li>
+               <li>Note: uploaded image appear in its actual resolution for the ease of selecting the required part.</li>
+            </ul>
+         </div>
+      </div>
+      <div class="helper helperDom5">
+         <div class="imgHolder">
+            <img class="help" src="/static/img/snipe5.png">
+         </div>
+         <div class="helperDoc">
+            <li>The preview dialog box displays the area being selected, this can be zoomed in / out to make sure the desired sprite portion is being selected, the preview box updates view dynamically with change in selections.</li>
+            <li>Width can be specified in "required width" input box to compute and re-calculate the image size and position as per requirement.</li>
+            <li> The final css property can be copied mauallys from the text area provided or by clicking on the copy button. The values are not rounded off for the purpose of maintaining the accuracy, you can round off to the nearest number should you wish to.
+            </li>
+            <li>Note: This property box can be moved around or re-sized as per convenience.</li>
+         </div>
+      </div>
+      <div class="helper helperDom4">
+         <div class="imgHolder">
+            <img class="help" src="/static/img/snipe4.png">
+         </div>
+         <div class="helperDoc">
+            <li>The Reselect image button navigates to previous page, providing option to select a new image.</li>
+            <li>For better viewability, background color of the image can be changed with the color palette provided (works only if the sprite image is transparent).</li>
+            <li>The selector's color can also be changed.</li>
+            <li>Note: This property box can also be moved around or re-sized as per convenience.</li>
+         </div>
+      </div>
+   </body>
+</html>
