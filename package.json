@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Seamlessly map images in sprite",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "body-parser": "*",
     "express": "*",
