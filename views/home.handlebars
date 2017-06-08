@@ -1,14 +1,14 @@
 <div class="gotoSite">
-     <div class="mapperContainer">
-        <div class="arrow rotate"></div>
-        <div class="gotToMapper">Need help?</div>
-     </div>
+   <div class="mapperContainer">
+      <div class="arrow rotate"></div>
+      <div class="gotToMapper">Need help?</div>
+   </div>
 </div>
 <div class="previewStep">
    <div class="imageUpdater">
       <div class="addImageUrl">
          <h1> Enter Image Link</h1>
-         <div class="cls_imageCon">Image Link : 
+         <div class="cls_imageCon">Image Link :
             <input class="cls_getImage" type="text" />
             <input class="cls_imageGetBtn" type="button" value="OK"/>
          </div>
@@ -32,7 +32,9 @@
 </div>
 <div class="bg_wrapper renderStep">
    <div class="bg_container">
-      <img class="bg_image" src="">
+      <div class="imgContainer">
+         <img class="bg_image" src="">
+      </div>
       <div class="bg_selector"></div>
    </div>
    <div class="absolutePreview">
@@ -52,7 +54,7 @@
          <h2>Required Width</h2>
          <div class="dimensionPropHolder">
             <div class="textContainer">
-               <input class="bg_reqW widthHolder" type="text" placeholder="Required Width Eg:20"> 
+               <input class="bg_reqW widthHolder" type="text" placeholder="Required Width Eg:20">
                {{!-- OR <input class="bg_reqH heightHolder" type="text" placeholder="Required Height Eg:20"> --}}
             </div>
             <input class="submitholder" type="submit" onclick="validator();" value="Set Dimension" class="bg_submitBtn">
@@ -66,11 +68,12 @@
    </div>
    <div class="absolutePreview noOverFlow">
       <div class="closePropertyTab">
-      <span class="closeIt"> &#10006; </span>
+         <span class="closeIt"> &#10006; </span>
       </div>
       <button class="reSelectImg">Re-select Image</button>
       <div class="head bgColorSwatchSelector">
          <h2>Sprite Background Color</h2>
+         <h3>(Works for transparent image)</h3>
          <div class="swatches">
             <div class="primary" style="background: red;"></div>
             <div class="primary" style="background: blue;"></div>

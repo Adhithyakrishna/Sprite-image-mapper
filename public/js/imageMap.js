@@ -29,9 +29,9 @@
 
 			conObj = $('.bg_container'),
 			/*Uploaded "image container"*/
-			ct = conObj.offset().top - 2,
+			ct = conObj.offset().top,
 			/*top position of the image container*/
-			cl = conObj.offset().left - 2,
+			cl = conObj.offset().left,
 			/*left position of the image container*/
 			/*Get the exact position of the container relative to the document*/
 			bx = (l - cl),
