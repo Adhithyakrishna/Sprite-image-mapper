@@ -87,6 +87,7 @@
 	var initializeSelector = function() {
 
 		$('.bg_selector').resizable({
+			handles: 'n, e, s, w',
 			resize: function() {
 				setBgCss();
 			}
@@ -97,6 +98,7 @@
 			containment: 'parent'
 		});
 		$('.absolutePreview').resizable({
+			handles: 'n, e, s, w',
 			containment: 'parent'
 		});
 		$('.bg_selector').draggable({
@@ -211,9 +213,7 @@
 	});
 
 	$(".reSelectImg").unbind('click').bind('click', function() {
-		$("#updloadFile").val('');
-		$(".previewStep").show();
-		$(".renderStep").hide();
+ 		location.reload();
 	});
 
 	$(".copyCss").click(function() {

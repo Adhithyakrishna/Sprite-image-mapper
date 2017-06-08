@@ -38,32 +38,34 @@
       <div class="bg_selector"></div>
    </div>
    <div class="absolutePreview">
-      <div class="bg_previewCon head">
-         <div class="header">
-            <h2>Preview</h2>
-         </div>
-         <div class="overflowContainer">
-            <div class="bg_preview"></div>
-         </div>
-         <div class="zoomPreview">
-            <button class="zoomer zoomin">+</button>
-            <button class=" zoomer zoomOut">-</button>
-         </div>
-      </div>
-      <div class="bg_inCon head">
-         <h2>Required Width</h2>
-         <div class="dimensionPropHolder">
-            <div class="textContainer">
-               <input class="bg_reqW widthHolder" type="text" placeholder="Required Width Eg:20">
-               {{!-- OR <input class="bg_reqH heightHolder" type="text" placeholder="Required Height Eg:20"> --}}
+      <div class="relativePositionContainer">
+         <div class="bg_previewCon head">
+            <div class="header">
+               <h2>Preview</h2>
             </div>
-            <input class="submitholder" type="submit" onclick="validator();" value="Set Dimension" class="bg_submitBtn">
+            <div class="overflowContainer">
+               <div class="bg_preview"></div>
+            </div>
+            <div class="zoomPreview">
+               <button class="zoomer zoomin">+</button>
+               <button class=" zoomer zoomOut">-</button>
+            </div>
          </div>
-      </div>
-      <div class="getCss">
-         <h2>Image Position Css property</h2>
-         <textarea name="Text1" class="myRenderedCss" cols="30" rows="5"></textarea>
-         <button class="copyCss">copy</button>
+         <div class="bg_inCon head">
+            <h2>Required Width</h2>
+            <div class="dimensionPropHolder">
+               <div class="textContainer">
+                  <input class="bg_reqW widthHolder" type="text" placeholder="Required Width Eg:20">
+                  {{!-- OR <input class="bg_reqH heightHolder" type="text" placeholder="Required Height Eg:20"> --}}
+               </div>
+               <input class="submitholder" type="submit" onclick="validator();" value="Set Dimension" class="bg_submitBtn">
+            </div>
+         </div>
+         <div class="getCss">
+            <h2>Image Position Css property</h2>
+            <textarea name="Text1" class="myRenderedCss" cols="30" rows="5"></textarea>
+            <button class="copyCss">copy</button>
+         </div>
       </div>
    </div>
    <div class="absolutePreview noOverFlow">
