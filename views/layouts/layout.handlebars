@@ -6,14 +6,21 @@
       <script src="//code.jquery.com/jquery-1.10.2.js"></script>
       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
       <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-      {{!-- 
+      {{!--
       <link rel="stylesheet" href="spectrum.css">
       --}}
       <link rel="stylesheet" type="text/css" href="/static/css/imageMap.css">
       <link href="https://fonts.googleapis.com/css?family=Amaranth|Crete+Round" rel="stylesheet">
    </head>
    <body>
-      <div class="header">Sprite-Image Mapper</div>
+      <div class="header">Sprite-Image Mapper
+         <div class="shortCutHolder hide">
+            <div class="shorCutHeader">Shortcuts</div>
+            <div class="shorCuts">
+               1) Tap on the selector and use arrow keys to move the selector.<br>2) Hold shift key and use arrow keys to resize the selector
+            </div>
+         </div>
+      </div>
       <div class="contentHolder">
          {{{body}}}
       </div>
